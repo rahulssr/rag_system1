@@ -1,0 +1,217 @@
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 400px;
+  margin: auto;
+}
+
+.upload-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #475569;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.upload-label:hover {
+  background-color: #64748b;
+}
+
+.upload-icon {
+  font-size: 24px;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.file-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.upload-button {
+  margin-top: 15px;
+  background: #10b981;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.upload-button:hover {
+  background: #059669;
+}
+
+.upload-button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+}
+
+.progress-bar {
+  width: 0;
+  height: 5px;
+  background: #10b981;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+  margin-top: 10px;
+}
+/* 🔥 Stunning Background */
+/* 🔥 Dark Futuristic Background */
+/* 🌌 Full Black Background & Center Everything */
+/* 🌌 Full Black Background & Center Everything */
+body {
+  background: linear-gradient(135deg, #121212, #1e1e1e, #252525);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 🎯 Centered Page Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* 🔥 Stylish Title */
+.rag-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 15px rgba(255, 0, 255, 0.7);
+  margin-bottom: 40px;
+}
+
+/* 🔼 Adds More Space Between Sections */
+.spacer {
+  height: 30px;
+}
+.spacer-large {
+  height: 50px;
+}
+
+/* 🚀 Modern Input Field */
+input {
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 350px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: 0.3s;
+}
+
+/* 💡 Glowing Input Effect */
+input:focus {
+  box-shadow: 0px 0px 10px rgba(0, 255, 204, 0.7);
+}
+
+/* ✨ Modern Button */
+button {
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 20px rgba(255, 0, 255, 0.5);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 25px rgba(255, 0, 255, 0.7);
+}
+
+/* 🎯 Beautiful Result Display */
+.result-container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 255, 204, 0.5);
+  max-width: 600px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+/* 💎 Glowing Result Title */
+.result-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff00ff;
+  text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
+}
+
+/* 🔥 Stylish Result Text */
+.result-text {
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-shadow: 0px 0px 6px rgba(0, 255, 204, 0.7);
+  line-height: 1.5;
+}
+
+/* 🎤 "Ask a Question" Styled */
+.query-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0px 0px 8px rgba(0, 255, 204, 0.8);
+  margin-bottom: 10px;
+}
+
+/* 📝 "No Result Yet" Styled */
+.no-result {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #888;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+}
+/* ✨ Smooth fade-in effect for results */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
