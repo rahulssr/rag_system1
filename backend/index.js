@@ -15,7 +15,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(cors({
-  origin: 'https://rag-system1-2.onrender.com/',
+  origin: 'https://rag-system1-2.onrender.com',
   methods: 'GET, POST',
   allowedHeaders: 'Content-Type'
 }));
