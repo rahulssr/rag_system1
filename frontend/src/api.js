@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://localhost:3000"; // Change if needed
+const BACKEND_URL = "https://rag-system1-1.onrender.com"; // Change if needed
 
 export async function uploadPDF(file) {
   const formData = new FormData();
@@ -14,7 +14,7 @@ export async function uploadPDF(file) {
 
 export async function queryRAG(question) {
   try {
-    const response = await fetch("http://localhost:3000/qa", {
+    const response = await fetch(`${BACKEND_URL}/qa`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

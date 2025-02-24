@@ -14,7 +14,11 @@ dotenv.config(); // This should be at the top, before using any environment vari
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://rag-system1-2.onrender.com/',
+  methods: 'GET, POST',
+  allowedHeaders: 'Content-Type'
+}));
 app.use(express.json());
 
 const openaiApiKey = process.env.OPENAI_API_KEY;

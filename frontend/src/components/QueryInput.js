@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+const BACKEND_URL = "https://rag-system1-1.onrender.com"; // Change if needed
 export default function QueryInput({ setQueryResults }) {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -11,7 +12,7 @@ export default function QueryInput({ setQueryResults }) {
     setQueryResults([]); // Clear previous results
 
     try {
-      const response = await fetch("http://localhost:3000/qa", {
+      const response = await fetch(`${BACKEND_URL}/qa`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: query }),
